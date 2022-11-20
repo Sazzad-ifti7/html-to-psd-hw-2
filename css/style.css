@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css */
+.container {
+    width: 1170px;
+    margin: auto;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  
+  
+.align-center{
+    align-items: center;
+}
+  
+:root {
+    --mainColor: #0f2f44;
+    --yellowColor: #ffc712;
+    --primaryFont: "Ubuntu", sans-serif;
+    --secondaryFont: "Open Sans", sans-serif;
+    --thirdFont: "Abril Fatface", cursive;
+}
+  
+body {
+    font-family: var(--primaryFont);
+}
+  
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+  
+/* common css ends */
+  
+/* Headers starts */
+
+header {
+    background-color: var(--mainColor);
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+   
+}
+
+header .welcome {
+    width: 50%;
+}
+
+header .opening {
+    width: 50%;
+    text-align: right;
+  
+}
+  
+/* Header ends */
+  
+/* nave starts */
+  nav .logo {
+    width: 30%;
+  }
+  nav .menu {
+    width: 70%;
+  }
+  .menu ul {
+    text-align: right;
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  
+.menu ul li a {
+    color: #222;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 40px 20px;
+    display: block;
+    transition: 0.3s;
+}
+  
+.menu ul li:hover > a {
+    background-color: #fff9e6;
+    color: var(--yellowColor);
+}
+  
+.menu .submenu {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    background-color: #eee;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+  
+.menu ul li:hover > .submenu {
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+}
+.menu ul li a .downarrow{
+      transition: 0.3s;
+}
+
+.menu ul li:hover a .downarrow {
+    transform: rotate(180deg);
+    display:inline-block;
+}
+  
+.menu .submenu li {
+    display: block;
+}
+  
+.menu .submenu li a {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+  
+/* Nav ends */
+  
+  
+/* Banner starts */
+
+#banner {
+    background-image: url(../image/banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#banner .success {
+    width: 40%;
+    padding: 140px 0;
+}
+
+#banner .success .upperHeadding {
+    font-weight: 400;
+    font-size: 50px;
+    flood-color: #0f2f44;
+}
+
+#banner .success .lowerHeading {
+    font-weight: 400;
+    font-size: 80px;
+    flood-color: #0f2f44;
+    font-family: 'Abril Fatface', cursive;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#banner .success a {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #8484bf;
+    padding: 13px 19px;
+    border-radius: 5px;
+}
+  /* Banner ends */
